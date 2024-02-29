@@ -4,55 +4,58 @@ import "./style.css";
 export default class Company extends Component {
   render() {
     return (
-    <div>
-      <div className="container-fluid">
-        <div className="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
-
-          {/*slasscom*/}
-          <div className="col-5" style={{ width: "230px" }}>
-            <div className="image-container">
-              <img className="profile-img" src="/images/company/slasscom.png" alt="..." />
+     
+      <div className="d-flex justify-content-center align-items-center" style={{marginLeft:"70px"}}>
+        <div className="container-fluid">
+          <div className="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+  
+            {/*slasscom*/}
+            <div className="col-5" style={{ width: "230px" }}>
+              <div className="image-container">
+                <img className="profile-img" src="/images/company/slasscom.png" alt="..." />
+              </div>
             </div>
-          </div>
 
-          {/*royaa jpg*/}
-          <div className="col-5" style={{ width: "230px" }}>
-            <div className="image-container">
-              <img className="profile-img" src="/images/company/royaa jpg.jpg" alt="..." />
+            {/*royaa jpg*/}
+            <div className="col-5" style={{ width: "230px" }}>
+              <div className="image-container">
+                <img className="profile-img" src="/images/company/royaa jpg.jpg" alt="..." />
+              </div>
             </div>
-          </div>
 
-          {/*ideamrt*/}
-          <div className="col-5" style={{ width: "230px" }}>
-            <div className="image-container">
-              <img className="profile-img" src="/images/company/ideamrt.png" alt="..." />
+            {/*ideamrt*/}
+            <div className="col-5" style={{ width: "230px" }}>
+              <div className="image-container">
+                <img className="profile-img" src="/images/company/ideamrt.png" alt="..." />
+              </div>
             </div>
-          </div>
 
-          {/*examhu*/}
-          <div className="col-5" style={{ width: "230px" }}>
-            <div className="image-container">
-              <img className="profile-img" src="/images/company/examhu.png" alt="..." />
+            {/*examhu*/}
+            <div className="col-5" style={{ width: "230px" }}>
+              <div className="image-container">
+                <img className="profile-img" src="/images/company/examhu.png" alt="..." />
+              </div>
             </div>
-          </div>
 
-          {/*dialog*/}
-          <div className="col-5" style={{ width: "230px" }}>
-            <div className="image-container">
-              <img className="profile-img" src="/images/company/dialog.jpeg" alt="..." />
+            {/*dialog*/}
+            <div className="col-5" style={{ width: "230px" }}>
+              <div className="image-container">
+                <img className="profile-img" src="/images/company/dialog.jpeg" alt="..." />
+              </div>
             </div>
-          </div>
 
-          {/*coursehub name only*/}
-          <div className="col-5" style={{ width: "230px" }}>
-            <div className="image-container">
-              <img className="profile-img" src="/images/company/coursehub name only.png" alt="..." />
+            {/*coursehub name only*/}
+            <div className="col-5" style={{ width: "230px" }}>
+              <div className="image-container">
+                <img className="profile-img" src="/images/company/coursehub name only.png" alt="..." />
+              </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
-    </div>
-    )
+     
+      
+    );
   }
 }

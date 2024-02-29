@@ -12,7 +12,7 @@ export default class DetailsBar extends Component {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title" style={{ color: "#1E3447", fontFamily: "Inter", fontSize: "24px" }}>800K+ Downloads</h5>
+                <h5 className="card-title" style={{ color: "#1E3447", fontFamily: "Inter", fontSize: "24px", fontWeight:"600", lineHeight:"29.05px" }}>800K+ Downloads</h5>
               </div>
             </div>
           </div>
@@ -26,7 +26,7 @@ export default class DetailsBar extends Component {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title" style={{ color: "#1E3447", fontFamily: "Inter", fontSize: "24px" }}>500K+ Registered Students</h5>
+                <h5 className="card-title" style={{ color: "#1E3447", fontFamily: "Inter", fontSize: "24px", fontWeight:"600", lineHeight:"29.05px" }}>500K+ Registered Students</h5>
               </div>
             </div>
           </div>
@@ -40,7 +40,7 @@ export default class DetailsBar extends Component {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title" style={{ color: "#1E3447", fontFamily: "Inter", fontSize: "24px" }}>70K Daily Users</h5>
+                <h5 className="card-title" style={{ color: "#1E3447", fontFamily: "Inter", fontSize: "24px", fontWeight:"600", lineHeight:"29.05px" }}>70K Daily Users</h5>
               </div>
             </div>
           </div>

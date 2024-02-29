@@ -68,7 +68,7 @@ export default class Footer extends Component {
           {/* Grid container */}
 
           {/* Copyright */}
-          <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
+          <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)', fontFamily: "Inter", fontWeight: "500", fontSize: "18px", lineHeight: "21.78px"}}>
           ©2024 FONIX, All right reserved
           </div>
           {/* Copyright */}
