@@ -17,13 +17,13 @@ export default function Service() {
             alt="Logo"
             className="img-fluid"
             style={{ maxWidth: '52px', maxHeight: '52px' }}
-          />&nbsp;Digital Marketing</b>
+          />&nbsp;&nbsp;&nbsp;Digital Marketing</b>
     </h5>
-    <p className="card-text" style={{ fontFamily: "Inter", fontWeight: "400", fontSize: "18px", lineHeight: "26px" }}>
+    <p className="card-text" style={{ fontFamily: "Inter", fontWeight: "400", fontSize: "18px", lineHeight: "26px" , color:"#00000099" }}>
       Elevate your brand with our cutting-edge digital marketing strategies, including social media, and PPC campaigns, to boost online presence.
     </p>
     <div className="mt-auto">
-      <a href="1" className="btn btn-danger" style={{ borderRadius: "40px", fontFamily: "Inter", fontWeight: "700", fontSize: "18px", lineHeight: "21.78px", float: "right" }}>
+      <a href="1" className="btn btn-danger" style={{ borderRadius: "40px", fontFamily: "Inter", fontWeight: "700", fontSize: "15px", lineHeight: "21.78px", float: "right" }}>
         Inquire&nbsp;<i className="fas fa-arrow-right"></i>
       </a>
     </div>
@@ -40,13 +40,13 @@ export default function Service() {
             alt="Logo"
             className="img-fluid"
             style={{ maxWidth: '52px', maxHeight: '52px' }}
-          />&nbsp;Business Consulting</b>
+          />&nbsp;&nbsp;&nbsp;Business Consulting</b>
     </h5>
-    <p className="card-text" style={{ fontFamily: "Inter", fontWeight: "400", fontSize: "18px", lineHeight: "26px" }}>
+    <p className="card-text" style={{ fontFamily: "Inter", fontWeight: "400", fontSize: "18px", lineHeight: "26px" , color:"#00000099" }}>
       Transform your business with our expert consulting services, offering personalized strategies for growth, efficiency, and competitive advantage.
     </p>
     <div className="mt-auto">
-      <a href="1" className="btn btn-danger" style={{ borderRadius: "40px", fontFamily: "Inter", fontWeight: "700", fontSize: "18px", lineHeight: "21.78px", float: "right" }}>
+      <a href="1" className="btn btn-danger" style={{ borderRadius: "40px", fontFamily: "Inter", fontWeight: "700", fontSize: "15px", lineHeight: "21.78px", float: "right" }}>
         Inquire&nbsp;<i className="fas fa-arrow-right"></i>
       </a>
     </div>
@@ -63,13 +63,13 @@ export default function Service() {
             alt="Logo"
             className="img-fluid"
             style={{ maxWidth: '52px', maxHeight: '52px' }}
-          />&nbsp;R&D</b>
+          />&nbsp;&nbsp;&nbsp;R&D</b>
     </h5>
-    <p className="card-text" style={{ fontFamily: "Inter", fontWeight: "400", fontSize: "18px", lineHeight: "26px" }}>
+    <p className="card-text" style={{ fontFamily: "Inter", fontWeight: "400", fontSize: "18px", lineHeight: "26px", color:"#00000099" }}>
       Drive innovation with our Research and Development services, focusing on technological advancements and custom solutions to stay ahead in your industry.
     </p>
     <div className="mt-auto">
-      <a href="1" className="btn btn-danger" style={{ borderRadius: "40px", fontFamily: "Inter", fontWeight: "700", fontSize: "18px", lineHeight: "21.78px", float: "right" }}>
+      <a href="1" className="btn btn-danger" style={{ borderRadius: "40px", fontFamily: "Inter", fontWeight: "700", fontSize: "15px", lineHeight: "21.78px", float: "right" }}>
         Inquire&nbsp;<i className="fas fa-arrow-right"></i>
       </a>
     </div>

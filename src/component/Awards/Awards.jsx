@@ -46,7 +46,7 @@ export default class Awards extends Component {
           >
              {/*NBQSA Best Startup Gold Award 2023*/}
              <div className="col-5" style={{width:"300px"}}>
-                <img className="profile-img" src="/images/awards/NBQSA Best Startup Gold Award 2023.png" alt="..." style={{width:"230px", height:"280px"}}/>
+                <img className="profile-img-awards" src="/images/awards/NBQSA Best Startup Gold Award 2023.png" alt="..." style={{width:"230px", height:"280px"}}/>
                 <center>
                     <p><b>NBQSA Best Startup <br/>
                       Gold Award 2023</b></p>

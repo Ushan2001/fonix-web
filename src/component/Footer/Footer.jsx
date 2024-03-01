@@ -2,10 +2,19 @@ import React, { Component } from 'react';
 
 export default class Footer extends Component {
   render() {
-    return (
-      <div >
-        <footer className="text-center bg-body-tertiary" >
+    const backgroundImageStyle = {
+    // specify the URL of your background image
+      backgroundImage: 'url("/images/footer.png")',
+      // set background size to cover the entire container
+      backgroundSize: 'cover',
+      // set background position to center
+      backgroundPosition: 'center',
+      
+    };
 
+    return (
+      <div>
+        <footer className="text-center bg-body-tertiary" style={backgroundImageStyle}>
           {/* Grid container */}
           <div className="container pt-4">
             {/* Section: Social media */}
@@ -17,8 +26,12 @@ export default class Footer extends Component {
                 href="#!"
                 role="button"
                 data-mdb-ripple-color="dark"
-              ><i className="fab fa-facebook-f"></i
-              ></a>
+              ><img
+              src="/images/scoial/facebook.png"
+              alt="Logo"
+              className="img-fluid"
+              style={{ maxWidth: '44px', maxHeight: '44px' }}
+            /></a>
 
               {/* Twitter */}
               <a
@@ -27,8 +40,12 @@ export default class Footer extends Component {
                 href="#!"
                 role="button"
                 data-mdb-ripple-color="dark"
-              ><i className="fab fa-twitter"></i
-              ></a>
+              ><img
+              src="/images/scoial/twitter.png"
+              alt="Logo"
+              className="img-fluid"
+              style={{ maxWidth: '44px', maxHeight: '44px' }}
+            /></a>
 
               {/* Instagram */}
               <a
@@ -37,18 +54,12 @@ export default class Footer extends Component {
                 href="#!"
                 role="button"
                 data-mdb-ripple-color="dark"
-              ><i className="fab fa-instagram"></i
-              ></a>
-
-              {/* Linkedin */}
-              <a
-                data-mdb-ripple-init
-                className="btn btn-link btn-floating btn-lg text-body m-1"
-                href="#!"
-                role="button"
-                data-mdb-ripple-color="dark"
-              ><i className="fab fa-linkedin"></i
-              ></a>
+              ><img
+              src="/images/scoial/instagram.png"
+              alt="Logo"
+              className="img-fluid"
+              style={{ maxWidth: '44px', maxHeight: '44px' }}
+            /></a>
 
              {/* YouTube */}
                 <a
@@ -58,7 +69,12 @@ export default class Footer extends Component {
                     role="button"
                     data-mdb-ripple-color="dark"
                 >
-                        <i className="fab fa-youtube"></i>
+                        <img
+              src="/images/scoial/youtube.png"
+              alt="Logo"
+              className="img-fluid"
+              style={{ maxWidth: '44px', maxHeight: '44px' }}
+            />
                 </a>
 
             </section>
