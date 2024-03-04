@@ -27,42 +27,70 @@ class Header extends Component {
             style={{ maxWidth: '148px', maxHeight: '111px', marginLeft: "92px", marginTop: "54px" }}
           />
 
-          {/* Company Image */}
-          <img
-            src="/images/fonix.png"
-            alt="Logo"
-            className="img-fluid"
-            style={{ float: 'right', marginRight: '30px', marginTop: '137px', width:"50%", height:"50%" }}
-          />
 
-<div className="p-3 p-md-5 text-center bg-image" style={{ marginTop: "50px", float: 'left' }}>
-  <div className="mask" >
-    <div className="d-flex justify-content-center align-items-center h-100">
-      <div className="text-white">
-        <h4 className="mb-3" style={{ color: '#1E3447', fontFamily: "Inter", fontWeight: "400", fontSize: "33px", lineHeight: "39.94px", textAlign:"left", marginLeft:"80px" }}>Welcome to</h4>
+  <div class="row" >
+  <div class="col">
+  <div className="p-3 p-md-5 text-center bg-image" style={{ marginTop: "50px" }}>
+    <div className="mask">
+      <div className="d-flex justify-content-center align-items-center h-100">
+        <div className="text-white">
 
-        <div className="mb-3" style={{ display: "flex", justifyContent: 'flex-end', alignItems: 'flex-end', textAlign:"left", marginLeft:"80px",  marginTop:"10px" }}>
-          <h1 style={{ color: '#1E3447', fontFamily: "Inter", fontSize: "68px", lineHeight: "72px", fontWeight: "700", }}>FONIX</h1>
-          <h1 style={{ color: '#EC2E25', fontFamily: "Inter", marginLeft: '10px', lineHeight: '72px', fontWeight: "700", fontSize: "68px" }}>Software</h1>
+          <div className='row'>
+            <div className='col'>
+              <h4 style={{ color: '#1E3447', fontFamily: "Inter", fontWeight: "400", fontSize: "33px", lineHeight: "39.94px", textAlign: "left", marginLeft: "85px" }}>Welcome to</h4>
+            </div>
+          </div>
+
+          <div className="row" style={{ textAlign: "left", marginLeft: "70px", marginTop: "10px" }}>
+            <div className='col'>
+              <h1 style={{ color: '#1E3447', fontFamily: "Inter", fontSize: "68px", lineHeight: "72px", fontWeight: "700" }}>FONIX</h1>
+            </div>
+
+            <div className='col'>
+              <h1 style={{ color: '#EC2E25', fontFamily: "Inter", marginLeft: '10px', lineHeight: '72px', fontWeight: "700", fontSize: "68px" }}>Software</h1>
+            </div>
+          </div>
+
+          <div className='col'>
+            <h1 className="mb-3" style={{ color: '#EC2E25', fontFamily: "Inter", lineHeight: '72px', fontWeight: "700", fontSize: "68px", textAlign: "left", marginLeft: "80px", marginTop: "10px" }}>Solutions</h1>
+          </div>
+
+          <div className='col'>
+            <h1 className="mb-3" style={{ color: '#1E3447', fontFamily: "Inter", lineHeight: '72px', fontWeight: "700", fontSize: "68px", textAlign: "left", marginLeft: "80px", marginTop: "10px" }}>Pvt Ltd.</h1>
+          </div>
+
+          <div className='col'>
+            <a
+              data-mdb-ripple-init
+              className="btn btn-outline-light btn-lg"
+              href="#!"
+              role="button"
+              style={{ borderRadius: "40px", fontFamily: "Inter", fontWeight: "700", fontSize: "18px", lineHeight: "21.78px", backgroundColor: "#EC2E25", marginLeft: "80px", float:"left" }}
+            >
+              Contact Us&nbsp;<i className="fas fa-headphones"></i>
+            </a>
+          </div>
+
         </div>
-
-        <h1 className="mb-3" style={{ color: '#EC2E25', fontFamily: "Inter", lineHeight: '72px', fontWeight: "700", fontSize: "68px", textAlign:"left", marginLeft:"80px",  marginTop:"-20px" }}>Solutions</h1>
-        <br></br>
-        <h1 className="mb-3" style={{ color: '#1E3447', fontFamily: "Inter", lineHeight: '72px', fontWeight: "700", fontSize: "68px", textAlign:"left", marginLeft:"80px",  marginTop:"-30px" }}>Pvt Ltd.</h1>
-
-        <a
-          data-mdb-ripple-init
-          className="btn btn-outline-light btn-lg"
-          href="#!"
-          role="button"
-          style={{ borderRadius: "40px", fontFamily: "Inter", fontWeight: "700", fontSize: "18px", lineHeight: "21.78px", float: "left", backgroundColor:"#EC2E25",marginLeft:"80px", marginTop:"20px" }}
-        >
-          Contact Us&nbsp;<i className="fas fa-headphones"></i>
-        </a>
       </div>
     </div>
   </div>
 </div>
+
+    <div class="col" >
+
+      {/* Company Image */}
+      <img
+            src="/images/fonix.png"
+            alt="Logo"
+            className="img-fluid company-image"
+            style={{float:"right",  width:"auto", height:"auto" }}
+          />
+
+    </div>
+    
+  </div>
+  
 
 
 

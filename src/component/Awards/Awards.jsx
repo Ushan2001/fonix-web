@@ -33,7 +33,7 @@ export default class Awards extends Component {
 
   render() {
     return (
-      <div>
+      <div className='row'>
         <div className="container-fluid">
           <center>
             <h4 className="mt-5" style={{fontFamily:"Inter", fontWeight:"700", fontSize:"28px", lineHeight:"33.89px"}}>Recognitions, Awards, and Accolades at Our Company</h4>

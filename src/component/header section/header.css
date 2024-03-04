@@ -18,3 +18,14 @@
     transform: translateX(-100%);
   }
 }
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 767px) {
+  /* Hide the company image on smaller screens */
+  .img-fluid.company-image {
+    display: none;
+  }
+}
+
+
+

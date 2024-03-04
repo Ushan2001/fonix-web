@@ -5,10 +5,10 @@ export default function Service() {
   return (
     <div className='container'>
       <h2 className="mb-3" style={{ color: "black", marginTop: "20px", fontWeight:"700", fontSize:"28px" , lineHeight:"33.89px" }}>Our Service</h2>
-
-      <div className="card-container d-flex justify-content-between">
-        
-        {/* Digital Marketing */}
+     
+  <div class="row">
+    <div class="col">
+      {/* Digital Marketing */}
 <div className="card animated-card" style={{ width: "25rem", margin: "0.5rem" }}>
   <div className="card-body d-flex flex-column">
     <h5 className="card-title" style={{ fontFamily: "Inter", fontWeight: "700", fontSize: "22px", lineHeight: "26.63px" }}>
@@ -29,9 +29,9 @@ export default function Service() {
     </div>
   </div>
 </div>
-
-
-        {/* Business Consulting */}
+    </div>
+    <div class="col">
+     {/* Business Consulting */}
 <div className="card animated-card" style={{ width: "25rem", margin: "0.5rem" }}>
   <div className="card-body d-flex flex-column">
     <h5 className="card-title" style={{ fontFamily: "Inter", fontWeight: "700", fontSize: "22px", lineHeight: "26.63px" }}>
@@ -52,8 +52,8 @@ export default function Service() {
     </div>
   </div>
 </div>
-
-
+    </div>
+    <div class="col">
        {/* R&D */}
 <div className="card animated-card" style={{ width: "25rem", margin: "0.5rem" }}>
   <div className="card-body d-flex flex-column">
@@ -75,7 +75,9 @@ export default function Service() {
     </div>
   </div>
 </div>
-</div>
-</div>
+    </div>
+  </div>
+  </div>
+
   );
 }
