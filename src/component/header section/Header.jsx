@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
     return (
       <div style={{ position: "relative", height: "810px" }}>
-        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", backgroundImage: "url('/images/bg.png')", rotate:"-0 deg" }}>
+        <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", backgroundImage: "url('/images/bg.png')", rotate:"-0 deg", backgroundRepeat:"no-repeat", backgroundSize:"cover" }}>
         </div>
         <header style={{ position: "relative" }}>
 
@@ -32,7 +32,7 @@ class Header extends Component {
             src="/images/fonix.png"
             alt="Logo"
             className="img-fluid"
-            style={{ float: 'right', marginRight: '30px', marginTop: '137px', width:"750px", height:"506px" }}
+            style={{ float: 'right', marginRight: '30px', marginTop: '137px', width:"50%", height:"50%" }}
           />
 
 <div className="p-3 p-md-5 text-center bg-image" style={{ marginTop: "50px", float: 'left' }}>
