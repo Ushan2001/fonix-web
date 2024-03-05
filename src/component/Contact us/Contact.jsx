@@ -1,6 +1,43 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 export default class Contact extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      formData: {
+        fname: '',
+        lname: '',
+        email: '',
+        message: '',
+      },
+    };
+  }
+
+  handleChange = (e) => {
+    const { name, value } = e.target;
+    this.setState((prevState) => ({
+      formData: {
+        ...prevState.formData,
+        [name]: value,
+      },
+    }));
+  };
+
+  handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await axios.post('http://localhost:8070/send-email', this.state.formData);
+      alert('Email sent successfully');
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Failed to send email. Please try again later.');
+    }
+  };
+
+
   render() {
     return (
       <div className="container mt-5">
@@ -55,27 +92,27 @@ export default class Contact extends Component {
 {/*form */}
 
           <div className="col-md-6">
-  <form id="contact-form" action="mailto:example@gmail.com" method="post" encType="text/plain">
+  <form id="contact-form" onSubmit={this.handleSubmit}>
     <div className="row">
       <div className="col-md-6 mb-3">
         <label htmlFor="form_name"><b>Firstname</b></label>
-        <input id="form_name" type="text" name="name" className="form-control" placeholder="Enter your firstname" required="required" style={{ borderRadius: "16px", marginTop: "10px" }} />
+        <input id="form_name" type="text" name="fname" className="form-control" placeholder="Enter your firstname" required="required" style={{ borderRadius: "16px", marginTop: "10px" }} onChange={this.handleChange} />
       </div>
 
       <div className="col-md-6 mb-3">
         <label htmlFor="form_lastname"><b>Lastname</b></label>
-        <input id="form_lastname" type="text" name="surname" className="form-control" placeholder="Enter your lastname" required="required" style={{ borderRadius: "16px", marginTop: "10px" }} />
+        <input id="form_lastname" type="text" name="lname" className="form-control" placeholder="Enter your lastname" required="required" style={{ borderRadius: "16px", marginTop: "10px" }} onChange={this.handleChange} />
       </div>
     </div>
 
     <div className="mb-3">
       <label htmlFor="form_email"><b>Email</b></label>
-      <input id="form_email" type="email" name="email" className="form-control" placeholder="Enter your email" required="required" style={{ borderRadius: "16px", marginTop: "10px" }} />
+      <input id="form_email" type="email" name="email" className="form-control" placeholder="Enter your email" required="required" style={{ borderRadius: "16px", marginTop: "10px" }} onChange={this.handleChange} />
     </div>
 
     <div className="mb-3">
       <label htmlFor="form_message"><b>How can we help you?</b></label>
-      <textarea id="form_message" name="message" className="form-control" placeholder="Message for us" rows="4" required="required" style={{ borderRadius: "16px", marginTop: "10px" }}></textarea>
+      <textarea id="form_message" name="message" className="form-control" placeholder="Message for us" rows="4" required="required" style={{ borderRadius: "16px", marginTop: "10px" }} onChange={this.handleChange}/>
     </div>
 
     <div className="text-center">

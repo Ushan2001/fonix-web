@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-
 import './header.css';
 
 class Header extends Component {
+  
   render() {
     return (
     <div style={{ position: "relative", height: "810px" }}>
@@ -64,9 +64,10 @@ class Header extends Component {
                       <a
                         data-mdb-ripple-init
                         className="btn btn-outline-light btn-lg"
-                        href="#!"
+                        href="#1"
                         role="button"
                         style={{ borderRadius: "40px", fontFamily: "Inter", fontWeight: "700", fontSize: "18px", lineHeight: "21.78px", backgroundColor: "#EC2E25", marginLeft: "80px", float:"left" }}
+                        onClick={this.handleContactUsClick}
                       >
                         Contact Us&nbsp;<i className="fas fa-headphones"></i>
                       </a>
