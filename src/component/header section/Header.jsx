@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import "./header.css"
+
+import './header.css';
 
 class Header extends Component {
   render() {
@@ -28,15 +29,16 @@ class Header extends Component {
 
         {/* Content */}
         <div className="row">
-          <div className="col">
+          <div className="col-md-6">
             <div className="p-3 p-md-5 text-center bg-image" style={{ marginTop: "30px" }}>
               <div className="mask">
                 <div className="d-flex justify-content-center align-items-center h-100">
                   <div className="text-white">
 
+                  
                     <div className='row'>
                       <div className='col'>
-                        <h4 style={{ color: '#1E3447', fontFamily: "Inter", fontWeight: "400", fontSize: "33px", lineHeight: "39.94px", textAlign: "left", marginLeft: "85px" }}>Welcome to</h4>
+                        <h4 id='welcome' style={{ color: '#1E3447', fontFamily: "Inter", fontWeight: "400", fontSize: "33px", lineHeight: "39.94px", textAlign: "left", marginLeft: "85px" }}>Welcome to</h4>
                       </div>
                     </div>
 
@@ -46,7 +48,7 @@ class Header extends Component {
                       </div>
 
                       <div className='col'>
-                        <h1 style={{ color: '#EC2E25', fontFamily: "Inter", marginLeft: '10px', lineHeight: '72px', fontWeight: "700", fontSize: "68px" }}>Software</h1>
+                        <h1 style={{ color: '#EC2E25', fontFamily: "Inter", lineHeight: '72px', fontWeight: "700", fontSize: "68px" }}>Software</h1>
                       </div>
                     </div>
 
@@ -76,7 +78,7 @@ class Header extends Component {
             </div>
           </div>
 
-          <div className="col">
+          <div className="col-md-6">
             {/* Company Image */}
             <img
               src="/images/fonix.png"
@@ -85,7 +87,6 @@ class Header extends Component {
               style={{float:"right",  width:"auto", height:"auto" }}
             />
           </div>
-
         </div>
       </header>
     </div>

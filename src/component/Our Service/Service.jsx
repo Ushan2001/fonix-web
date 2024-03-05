@@ -1,17 +1,18 @@
 import React from 'react';
-import "./card.css";
+import './card.css';
 
 export default function Service() {
   return (
     <div className='container'>
-      <h2 className="mb-3" style={{ color: "black", marginTop: "20px", fontWeight:"700", fontSize:"28px" , lineHeight:"33.89px" }}>Our Service</h2>
-     
-  <div class="row">
-    <div class="col">
-      {/* Digital Marketing */}
-<div className="card animated-card" style={{ width: "25rem", margin: "0.5rem" }}>
-  <div className="card-body d-flex flex-column">
-    <h5 className="card-title" style={{ fontFamily: "Inter", fontWeight: "700", fontSize: "22px", lineHeight: "26.63px" }}>
+    <div className='container-fluid mx-auto'>
+      <h2 className='mb-3' style={{ color: 'black', marginTop: '20px', fontWeight: '700', fontSize: '28px', lineHeight: '33.89px' }}>Our Service</h2>
+
+      <div className='row'>
+        <div className='col-md-4'>
+          {/* Digital Marketing */}
+          <div className='card animated-card' style={{ margin: '0.5rem' }}>
+            <div className='card-body d-flex flex-column'>
+            <h5 className="card-title" style={{ fontFamily: "Inter", fontWeight: "700", fontSize: "22px", lineHeight: "26.63px" }}>
       <b><img
             src="/images/service/digital.png"
             alt="Logo"
@@ -27,14 +28,15 @@ export default function Service() {
         Inquire&nbsp;<i className="fas fa-arrow-right"></i>
       </a>
     </div>
-  </div>
-</div>
-    </div>
-    <div class="col">
-     {/* Business Consulting */}
-<div className="card animated-card" style={{ width: "25rem", margin: "0.5rem" }}>
-  <div className="card-body d-flex flex-column">
-    <h5 className="card-title" style={{ fontFamily: "Inter", fontWeight: "700", fontSize: "22px", lineHeight: "26.63px" }}>
+            </div>
+          </div>
+        </div>
+
+        <div className='col-md-4'>
+          {/* Business Consulting */}
+          <div className='card animated-card' style={{ margin: '0.5rem' }}>
+            <div className='card-body d-flex flex-column'>
+            <h5 className="card-title" style={{ fontFamily: "Inter", fontWeight: "700", fontSize: "22px", lineHeight: "26.63px" }}>
       <b><img
             src="/images/service/business.png"
             alt="Logo"
@@ -50,14 +52,15 @@ export default function Service() {
         Inquire&nbsp;<i className="fas fa-arrow-right"></i>
       </a>
     </div>
-  </div>
-</div>
-    </div>
-    <div class="col">
-       {/* R&D */}
-<div className="card animated-card" style={{ width: "25rem", margin: "0.5rem" }}>
-  <div className="card-body d-flex flex-column">
-    <h5 className="card-title" style={{ fontFamily: "Inter", fontWeight: "700", fontSize: "22px", lineHeight: "26.63px" }}>
+            </div>
+          </div>
+        </div>
+
+        <div className='col-md-4'>
+          {/* R&D */}
+          <div className='card animated-card' style={{ margin: '0.5rem' }}>
+            <div className='card-body d-flex flex-column'>
+            <h5 className="card-title" style={{ fontFamily: "Inter", fontWeight: "700", fontSize: "22px", lineHeight: "26.63px" }}>
       <b><img
             src="/images/service/r&d.png"
             alt="Logo"
@@ -73,11 +76,11 @@ export default function Service() {
         Inquire&nbsp;<i className="fas fa-arrow-right"></i>
       </a>
     </div>
-  </div>
-</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
-
+    </div>
   );
 }

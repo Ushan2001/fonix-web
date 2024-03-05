@@ -27,5 +27,52 @@
   }
 }
 
+@media (max-width: 767px) {
+ #welcome{
+     text-align: center;
+ }
+}
 
 
+/* Add this to your existing header.css file or create a new one */
+
+
+/* Mobile Styles using Media Queries */
+@media (max-width: 767px) {
+  /* Adjust the styles for mobile devices */
+
+  /* Text Alignment */
+  .navbar-text.fonix {
+    text-align: center;
+    padding: 10px; /* Add padding for better readability on small screens */
+  }
+
+  /* Logo */
+  img.img-fluid {
+    max-width: 100%; /* Make the image responsive */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Remove any default spacing around the image */
+  }
+
+  /* Content Alignment */
+  .row {
+    text-align: center !important; /* Add !important to override any conflicting styles */
+    margin-left: 0 !important;
+  }
+
+  h4#welcome {
+    margin-left: 0 !important;
+    text-align: center !important;
+  }
+
+  h1 {
+    margin-left: 0 !important;
+    text-align: center !important;
+  }
+
+  /* Button Alignment */
+  a.btn-outline-light.btn-lg {
+    margin-left: 0 !important;
+    float: none !important; /* Remove float to center the button */
+  }
+}

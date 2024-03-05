@@ -52,39 +52,40 @@ export default class Contact extends Component {
 </div>
 
           </div>
+{/*form */}
 
-          {/* Contact Us Form */}
           <div className="col-md-6">
-            <form id="contact-form">
-              <div className="row">
-                <div className="col-md-6 mb-3">
-                  <label htmlFor="form_name" style={{ fontFamily: "Inter", fontWeight: "700", fontSize: "18px", lineHeight: "21.78px" }}><b>Firstname</b></label>
-                  <input id="form_name" type="text" name="name" className="form-control" placeholder="Enter your firstname" required="required" style={{borderRadius:"16px", marginTop:"10px"}} />
-                </div>
-
-                <div className="col-md-6 mb-3">
-                  <label htmlFor="form_lastname" style={{ fontFamily: "Inter", fontWeight: "700", fontSize: "18px", lineHeight: "21.78px" }}><b>Lastname</b></label>
-                  <input id="form_lastname" type="text" name="surname" className="form-control" placeholder="Enter your lastname" required="required" style={{borderRadius:"16px", marginTop:"10px"}} />
-                </div>
-              </div>
-
-              <div className="mb-3">
-                <label htmlFor="form_email" style={{ fontFamily: "Inter", fontWeight: "700", fontSize: "18px", lineHeight: "21.78px" }}><b>Email</b></label>
-                <input id="form_email" type="email" name="email" className="form-control" placeholder="Enter your email" required="required" style={{borderRadius:"16px", marginTop:"10px"}} />
-              </div>
-
-              <div className="mb-3">
-                <label htmlFor="form_message" style={{ fontFamily: "Inter", fontWeight: "700", fontSize: "18px", lineHeight: "21.78px" }}><b>How can we help you?</b></label>
-                <textarea id="form_message" name="message" className="form-control" placeholder="Message for us" rows="4" required="required" style={{borderRadius:"16px", marginTop:"10px"}}></textarea>
-              </div>
-
-              <div className="text-center">
-                <button type='submit' className="btn btn-danger" style={{ borderRadius: "40px", fontFamily: "Inter", fontWeight: "700", fontSize: "15px", lineHeight: "21.78px", float: "right" }}>Send <i className="fas fa-arrow-right"></i></button>
-              </div>
-            </form>
-          </div>
-        </div>
+  <form id="contact-form" action="mailto:example@gmail.com" method="post" encType="text/plain">
+    <div className="row">
+      <div className="col-md-6 mb-3">
+        <label htmlFor="form_name"><b>Firstname</b></label>
+        <input id="form_name" type="text" name="name" className="form-control" placeholder="Enter your firstname" required="required" style={{ borderRadius: "16px", marginTop: "10px" }} />
       </div>
+
+      <div className="col-md-6 mb-3">
+        <label htmlFor="form_lastname"><b>Lastname</b></label>
+        <input id="form_lastname" type="text" name="surname" className="form-control" placeholder="Enter your lastname" required="required" style={{ borderRadius: "16px", marginTop: "10px" }} />
+      </div>
+    </div>
+
+    <div className="mb-3">
+      <label htmlFor="form_email"><b>Email</b></label>
+      <input id="form_email" type="email" name="email" className="form-control" placeholder="Enter your email" required="required" style={{ borderRadius: "16px", marginTop: "10px" }} />
+    </div>
+
+    <div className="mb-3">
+      <label htmlFor="form_message"><b>How can we help you?</b></label>
+      <textarea id="form_message" name="message" className="form-control" placeholder="Message for us" rows="4" required="required" style={{ borderRadius: "16px", marginTop: "10px" }}></textarea>
+    </div>
+
+    <div className="text-center">
+      <button type='submit' className="btn btn-danger" style={{ borderRadius: "40px", fontFamily: "Inter", fontWeight: "700", fontSize: "15px", lineHeight: "21.78px", float: "right" }}>Send <i className="fas fa-arrow-right"></i></button>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+
     );
   }
 }

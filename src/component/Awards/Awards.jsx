@@ -33,6 +33,7 @@ export default class Awards extends Component {
 
   render() {
     return (
+      <div className='container'>
       <div className='row'>
         <div className="container-fluid">
           <center>
@@ -169,6 +170,7 @@ export default class Awards extends Component {
 			</div>
           </div>
         </div>
+      </div>
       </div>
     );
   }
