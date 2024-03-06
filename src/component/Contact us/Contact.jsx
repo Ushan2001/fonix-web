@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import "./contact.css"
 
 export default class Contact extends Component {
 
@@ -51,9 +52,10 @@ export default class Contact extends Component {
             </div>
 
             <div className="d-flex row">
-  <div className="col-md-4 mb-4 flex-grow-1">
+  <div className="col-md-4 mb-4 flex-grow-1" id="rowBoox">
     <h5 className="card-title" style={{ fontFamily: "Inter", fontWeight: "700", fontSize: "18px", lineHeight: "24.2px" }}>
       <b><img
+       id="contactUs"
         src="/images/contact/phone.png"
         alt="Logo"
         className="img-fluid"
@@ -62,9 +64,10 @@ export default class Contact extends Component {
     </h5>
   </div>
 
-  <div className="col-md-4 mb-4 flex-grow-1">
+  <div className="col-md-4 mb-4 flex-grow-1" id="rowBoox">
     <h5 className="card-title" style={{ fontFamily: "Inter", fontWeight: "700", fontSize: "18px", lineHeight: "24.2px" }}>
       <b><img
+       id="contactUs"
         src="/images/contact/mail.png"
         alt="Logo"
         className="img-fluid"
@@ -75,10 +78,11 @@ export default class Contact extends Component {
 </div>
 
 
-<div className="d-flex row" style={{marginTop:"25px"}}>
+<div className="d-flex row" id="rowBoox" >
   <div className="col-md-4 mb-4 flex-grow-1">
     <h5 className="card-title " style={{ fontFamily: "Inter", fontWeight: "700", fontSize: "18px", lineHeight: "24.2px" }}>
       <b><img
+        id="contactUs"
         src="/images/contact/address.png"
         alt="Logo"
         className="img-fluid"
@@ -91,19 +95,20 @@ export default class Contact extends Component {
           </div>
 {/*form */}
 
-          <div className="col-md-6">
+          <div className="col-md-6" id="Contactform">
   <form id="contact-form" onSubmit={this.handleSubmit}>
-    <div className="row">
-      <div className="col-md-6 mb-3">
-        <label htmlFor="form_name"><b>Firstname</b></label>
-        <input id="form_name" type="text" name="fname" className="form-control" placeholder="Enter your firstname" required="required" style={{ borderRadius: "16px", marginTop: "10px" }} onChange={this.handleChange} />
-      </div>
+  <div className="row"  >
+  <div className="col-md-6 col-sm-6 mb-3">
+    <label htmlFor="form_name"><b>Firstname</b></label>
+    <input id="form_name" type="text" name="fname" className="form-control" placeholder="Enter your firstname" required="required" style={{ borderRadius: "16px", marginTop: "10px" }} onChange={this.handleChange} />
+  </div>
 
-      <div className="col-md-6 mb-3">
-        <label htmlFor="form_lastname"><b>Lastname</b></label>
-        <input id="form_lastname" type="text" name="lname" className="form-control" placeholder="Enter your lastname" required="required" style={{ borderRadius: "16px", marginTop: "10px" }} onChange={this.handleChange} />
-      </div>
-    </div>
+  <div className="col-md-6 col-sm-6 mb-3">
+    <label htmlFor="form_lastname"><b>Lastname</b></label>
+    <input id="form_lastname" type="text" name="lname" className="form-control" placeholder="Enter your lastname" required="required" style={{ borderRadius: "16px", marginTop: "10px" }} onChange={this.handleChange} />
+  </div>
+</div>
+
 
     <div className="mb-3">
       <label htmlFor="form_email"><b>Email</b></label>

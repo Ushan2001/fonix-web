@@ -1,0 +1,25 @@
+@media (max-width: 767px){
+    #form_name{
+       margin-left: -12px;
+       width: 100%;
+    }
+
+    #form_lastname{
+        margin-left: -12px;
+        width: 100%;
+    }
+
+
+    #contactUs{
+        margin-bottom: 15px;
+        
+    }
+
+    #Contactform{
+        margin-top: 20px;
+    }
+
+    #rowBoox{
+        margin-top: 10px;
+    }
+}
